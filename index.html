@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fire star</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <h>FIRESTAR</h1>
+    </nav>
+
+    <!-- Featured Movie -->
+    <section class="banner">
+        <video autoplay muted loop>
+            <source src="movies/PUSHPA TRILER.mp4" type="video/mp4">
+        </video>
+        <div class="banner-text">
+            <h2>New Release</h2>
+            <button onclick="playMovie('movies/PUSHPA TRILER.mp4')">Watch Now</button>
+        </div>
+    </section>
+
+    <!-- Movies Section -->
+    <section class="movies">
+        <h2>Popular Movies</h2>
+        <div class="movies-container">
+            <div class="movie-card" onclick="playMovie('movies/Daaku Maharaaj (2025) 1080p Telugu PRE HD.zip')">
+                <img src="images/daku maharaj.jpg" alt=" Daaku Maharaaj ">
+                <p> Daaku Maharaaj (2025) 1080p Telugu PRE HD</p>
+            </div>
+            <div class="movie-card" onclick="playMovie('movies/Pushpa 2  The Rule Reloaded (2024) 1080p Telugu HQ HDRip.zip')">
+                <img src="images/PUSHPA2.webp" alt=" Pushpa 2  The Rule Reloaded ">
+                <p> Pushpa 2  The Rule Reloaded (2024) 1080p Telugu </p>
+            </div>
+            <div class="movie-card" onclick="playMovie('movies/movie2.mp4')">
+                <img src="images/movie2.jpg" alt="Movie 2">
+                <p>Movie 2</p>
+            </div> <div class="movie-card" onclick="playMovie('movies/movie2.mp4')">
+                <img src="images/movie2.jpg" alt="Movie 2">
+                <p>Movie 2</p>
+            </div>
+            <div class="movie-card" onclick="playMovie('movies/movie2.mp4')">
+                <img src="images/movie2.jpg" alt="Movie 2">
+                <p>Movie 2</p>
+            </div>
+            <div class="movie-card" onclick="playMovie('movies/movie2.mp4')">
+                <img src="images/movie2.jpg" alt="Movie 2">
+                <p>Movie 2</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Player Popup -->
+    <div class="video-popup" id="videoPopup">
+        <span class="close-btn" onclick="closeVideo()">×</span>
+        <video id="videoPlayer" controls>
+            <source src="" type="video/mp4">
+        </video>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
